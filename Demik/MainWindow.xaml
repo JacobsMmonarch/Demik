@@ -1,0 +1,34 @@
+﻿<Window x:Class="Demik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Формирование заказа" Height="450" Width="600">
+    <Grid>
+        <!-- UI элементы для ввода данных о заказе -->
+        <Label Content="Код лабораторного сосуда:"/>
+        <TextBox x:Name="txtVesselCode" />
+
+        <Label Content="Выберите заказчика:"/>
+        <ComboBox x:Name="cmbCustomers" >
+            <ComboBoxItem Content="Клиент 1"/>
+            <ComboBoxItem Content="Клиент 2"/>
+            <ComboBoxItem Content="Клиент 3"/>
+        </ComboBox>
+
+        <Button Content="Добавить клиента"/>
+
+        <!-- Другие элементы интерфейса -->
+        <StackPanel>
+            <CheckBox Content="Услуга 1"/>
+            <CheckBox Content="Услуга 2"/>
+            <CheckBox Content="Услуга 3"/>
+        </StackPanel>
+
+        <Label Content="Комментарий к заказу:"/>
+        <TextBox x:Name="txtOrderComment" TextWrapping="Wrap" AcceptsReturn="True" Height="100"/>
+
+        <Label Content="Стоимость заказа:"/>
+        <TextBlock x:Name="txtOrderCost" FontWeight="Bold"/>
+
+        <Button Content="Создать заказ"/>
+    </Grid>
+</Window>
