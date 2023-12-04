@@ -1,0 +1,11 @@
+﻿<Window x:Class="Demik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Demik" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="310" Text="1"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="310" Text="1"/>
+        <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="310" TextChanged="ResultTextBox_TextChanged"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0" Click="Button_Click" Width="310"/>
+    </Grid>
+</Window>
